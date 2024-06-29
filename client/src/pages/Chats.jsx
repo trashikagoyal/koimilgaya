@@ -5,7 +5,7 @@ import { AppContext } from "../context/AppContext";
 import { io } from "socket.io-client";
 
 const Chats = () => {
-  const socket = useMemo(() => io("http://localhost:5000"), []);
+  const socket = useMemo(() => io("https://koimilgaya-1.onrender.com"), []);
 
   const { user } = useContext(AppContext);
 
@@ -16,7 +16,7 @@ const Chats = () => {
 
   const getFromFav = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/getFromFav", {
+      const res = await axios.get("https://koimilgaya-1.onrender.com/api/getFromFav", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

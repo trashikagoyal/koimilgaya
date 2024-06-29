@@ -10,7 +10,7 @@ const Profile = () => {
   const { user } = useContext(AppContext);
 
   const getUsers = async () => {
-    const res = await axios.get("http://localhost:5000/api/getUsers");
+    const res = await axios.get("https://koimilgaya-1.onrender.com/api/getUsers");
     const { data } = await res.data;
     console.log(data);
     const filteredUsers = data.filter(

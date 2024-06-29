@@ -47,7 +47,7 @@ const Signup = () => {
         toast.error("Error uploading image");
         return;
       } else {
-        const res = await axios.post("http://localhost:5000/api/signup", {
+        const res = await axios.post("https://koimilgaya-1.onrender.com/api/signup", {
           name,
           email,
           password,

@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   const checkAuth = async () => {
-    const res = await axios.get("http://localhost:5000/api/checkAuth", {
+    const res = await axios.get("https://koimilgaya-1.onrender.com/api/checkAuth", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
       },

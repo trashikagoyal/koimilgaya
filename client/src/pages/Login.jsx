@@ -21,7 +21,7 @@ const Login = () => {
       toast.error("Invalid email");
     }
 
-    const res = await axios.post("http://localhost:5000/api/login", {
+    const res = await axios.post("https://koimilgaya-1.onrender.com/api/login", {
       email,
       password,
     });
