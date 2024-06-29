@@ -28,7 +28,7 @@ const Profile = () => {
 
   const addToFav = async (id) => {
     const res = await axios.put(
-      "http://localhost:5000/api/addToFav/" + id,
+      "https://koimilgaya-1.onrender.com/api/addToFav/" + id,
       null,
       {
         headers: {
@@ -46,7 +46,7 @@ const Profile = () => {
   };
   const addToDis = async (id) => {
     const res = await axios.put(
-      "http://localhost:5000/api/addToDis/" + id,
+      "https://koimilgaya-1.onrender.com/api/addToDis/" + id,
       null,
       {
         headers: {
